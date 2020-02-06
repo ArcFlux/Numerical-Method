@@ -1,0 +1,16 @@
+From runs I've had done, here's a list of stuffs I've encountered so far:
+1. The program is working fine up to 4 equations.
+2. Over 4 sets of equations, problems start occuring:
+  2.1. Sometimes the program would just not run and the result would just be "NaN". After some troubleshottings,
+       I've known that "NaN" comes out when inversing the jacobian matrix.
+       - Sometimes this problem can be fixed just by rearranging the equations, but sometimes not.
+  2.2. If the program could run over 4 sets of equations, the solution for the last variable will always be wrong.
+       For example in 8 sets of equation, the solution for x1 up to x7 would all be correct, but not for x8.
+       - This can be fixed by minimalising amount of equation if possible by substituting easy to solve or obvious
+         variables with number or other variables with same value (all of these are known from the equation sets).
+       - If it's not possible to minimise the system to at max 4 equations, do couple more runs with known and
+         assumed correct solutions replacing variables (remember, the last solution at 4+ will always be wrong).
+
+Thank you for reading,
+if anyone has a solution for fixing this problem feel free to contact me at: randomcursedemail@gmail.com.
+Update will come if the solution has been found.
