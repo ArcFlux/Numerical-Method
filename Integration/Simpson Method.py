@@ -17,7 +17,7 @@ else:
             x = x1
             y = f(x)
             sum = y
-            print("x:",x); print("y:",y); print()
+            print("x:","%.5f" % x); print("y:","%.5f" % y); print()
             i = i + 1
         else:
             x = x1 + h*i
@@ -26,11 +26,11 @@ else:
                 sum = sum + 2*y
             else:
                 sum = sum + 4*y
-            print("x:",x); print("y:",y); print()
+            print("x:","%.5f" % x); print("y:","%.5f" % y); print()
             i = i + 1
     x = x2
     y = f(x)
     sum = sum + y
-    print("x:",x); print("y:",y); print()
+    print("x:","%.5f" % x); print("y:","%.5f" % y); print()
     sum = h * sum/3
-    print("SUM=",sum)
+    print("SUM=","%.5f" % sum)
